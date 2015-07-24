@@ -1,0 +1,372 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:PIC16F1939
+LIBS:power supply-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X03 P9
+U 1 1 55ACD396
+P 8800 1500
+F 0 "P9" H 8800 1700 50  0000 C CNN
+F 1 "PWR_INPUT" V 8900 1500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8800 1500 60  0001 C CNN
+F 3 "" H 8800 1500 60  0000 C CNN
+	1    8800 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR029
+U 1 1 55ACD58A
+P 9200 1600
+F 0 "#PWR029" H 9200 1350 50  0001 C CNN
+F 1 "Earth" H 9200 1450 50  0001 C CNN
+F 2 "" H 9200 1600 60  0000 C CNN
+F 3 "" H 9200 1600 60  0000 C CNN
+	1    9200 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 1600 9000 1600
+$Comp
+L GND #PWR030
+U 1 1 55ACD5BA
+P 9550 1500
+F 0 "#PWR030" H 9550 1250 50  0001 C CNN
+F 1 "GND" H 9550 1350 50  0000 C CNN
+F 2 "" H 9550 1500 60  0000 C CNN
+F 3 "" H 9550 1500 60  0000 C CNN
+	1    9550 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 1400 9550 1400
+Wire Wire Line
+	9000 1500 9550 1500
+$Comp
+L PWR_FLAG #FLG031
+U 1 1 55ACD5D9
+P 9200 1300
+F 0 "#FLG031" H 9200 1395 50  0001 C CNN
+F 1 "PWR_FLAG" H 9200 1480 50  0000 C CNN
+F 2 "" H 9200 1300 60  0000 C CNN
+F 3 "" H 9200 1300 60  0000 C CNN
+	1    9200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 1300 9200 1400
+Connection ~ 9200 1400
+$Comp
+L 7805 U4
+U 1 1 55ACD741
+P 3600 4100
+F 0 "U4" H 3750 3904 60  0000 C CNN
+F 1 "7805" H 3600 4300 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 3600 4100 60  0001 C CNN
+F 3 "" H 3600 4100 60  0000 C CNN
+	1    3600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR032
+U 1 1 55ACD799
+P 5250 4050
+F 0 "#PWR032" H 5250 3900 50  0001 C CNN
+F 1 "+5V" H 5250 4190 50  0000 C CNN
+F 2 "" H 5250 4050 60  0000 C CNN
+F 3 "" H 5250 4050 60  0000 C CNN
+	1    5250 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR033
+U 1 1 55ACD7B1
+P 3600 4800
+F 0 "#PWR033" H 3600 4550 50  0001 C CNN
+F 1 "GND" H 3600 4650 50  0000 C CNN
+F 2 "" H 3600 4800 60  0000 C CNN
+F 3 "" H 3600 4800 60  0000 C CNN
+	1    3600 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C5
+U 1 1 55ACD7D1
+P 2750 4350
+F 0 "C5" H 2775 4450 50  0000 L CNN
+F 1 "470u" H 2775 4250 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_11.2x7.5mm_RM2.5" H 2788 4200 30  0001 C CNN
+F 3 "" H 2750 4350 60  0000 C CNN
+	1    2750 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C7
+U 1 1 55ACD7F7
+P 4750 4350
+F 0 "C7" H 4775 4450 50  0000 L CNN
+F 1 "10u" H 4775 4250 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_11.2x6.3mm_RM2.5" H 4788 4200 30  0001 C CNN
+F 3 "" H 4750 4350 60  0000 C CNN
+	1    4750 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 55ACD81A
+P 4200 4350
+F 0 "C6" H 4225 4450 50  0000 L CNN
+F 1 "0.1u" H 4225 4250 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 4238 4200 30  0001 C CNN
+F 3 "" H 4200 4350 60  0000 C CNN
+	1    4200 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4050 3200 4050
+Wire Wire Line
+	3600 4350 3600 4800
+Wire Wire Line
+	4000 4050 5250 4050
+Wire Wire Line
+	2750 4500 2750 4700
+Wire Wire Line
+	2750 4700 4750 4700
+Connection ~ 3600 4700
+Wire Wire Line
+	4200 4700 4200 4500
+Wire Wire Line
+	4750 4700 4750 4500
+Connection ~ 4200 4700
+Wire Wire Line
+	4200 4200 4200 4050
+Connection ~ 4200 4050
+Wire Wire Line
+	4750 4200 4750 4050
+Connection ~ 4750 4050
+Wire Wire Line
+	2750 4200 2750 4050
+Connection ~ 2750 4050
+$Comp
+L +12V #PWR034
+U 1 1 55ACE06F
+P 9550 1400
+F 0 "#PWR034" H 9550 1250 50  0001 C CNN
+F 1 "+12V" H 9550 1540 50  0000 C CNN
+F 2 "" H 9550 1400 60  0000 C CNN
+F 3 "" H 9550 1400 60  0000 C CNN
+	1    9550 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR035
+U 1 1 55ACE117
+P 2150 4050
+F 0 "#PWR035" H 2150 3900 50  0001 C CNN
+F 1 "+12V" H 2150 4190 50  0000 C CNN
+F 2 "" H 2150 4050 60  0000 C CNN
+F 3 "" H 2150 4050 60  0000 C CNN
+	1    2150 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR036
+U 1 1 55ACE1B8
+P 7850 4750
+F 0 "#PWR036" H 7850 4500 50  0001 C CNN
+F 1 "Earth" H 7850 4600 50  0001 C CNN
+F 2 "" H 7850 4750 60  0000 C CNN
+F 3 "" H 7850 4750 60  0000 C CNN
+	1    7850 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR037
+U 1 1 55ACE1D2
+P 8200 5700
+F 0 "#PWR037" H 8200 5450 50  0001 C CNN
+F 1 "GND" H 8200 5550 50  0000 C CNN
+F 2 "" H 8200 5700 60  0000 C CNN
+F 3 "" H 8200 5700 60  0000 C CNN
+	1    8200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 55ACE676
+P 8200 4950
+F 0 "C8" H 8225 5050 50  0000 L CNN
+F 1 "0.1u" H 8225 4850 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 8238 4800 30  0001 C CNN
+F 3 "" H 8200 4950 60  0000 C CNN
+	1    8200 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 55ACE6AF
+P 8200 5400
+F 0 "R16" V 8280 5400 50  0000 C CNN
+F 1 "10k" V 8200 5400 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 8130 5400 30  0001 C CNN
+F 3 "" H 8200 5400 30  0000 C CNN
+	1    8200 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 5550 8200 5700
+Wire Wire Line
+	8200 5100 8200 5250
+Wire Wire Line
+	7850 4750 7850 4700
+Wire Wire Line
+	7850 4700 8200 4700
+Wire Wire Line
+	8200 4700 8200 4800
+$Comp
+L +5V #PWR038
+U 1 1 55ACE890
+P 10300 4600
+F 0 "#PWR038" H 10300 4450 50  0001 C CNN
+F 1 "+5V" H 10300 4740 50  0000 C CNN
+F 2 "" H 10300 4600 60  0000 C CNN
+F 3 "" H 10300 4600 60  0000 C CNN
+	1    10300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R17
+U 1 1 55ACE8C0
+P 10300 4950
+F 0 "R17" V 10380 4950 50  0000 C CNN
+F 1 "680" V 10300 4950 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 10230 4950 30  0001 C CNN
+F 3 "" H 10300 4950 30  0000 C CNN
+	1    10300 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P10
+U 1 1 55ACE905
+P 10500 5450
+F 0 "P10" H 10500 5600 50  0000 C CNN
+F 1 "CPU_PWR" V 10600 5450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 10500 5450 60  0001 C CNN
+F 3 "" H 10500 5450 60  0000 C CNN
+	1    10500 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR039
+U 1 1 55ACE9E6
+P 10300 5800
+F 0 "#PWR039" H 10300 5550 50  0001 C CNN
+F 1 "GND" H 10300 5650 50  0000 C CNN
+F 2 "" H 10300 5800 60  0000 C CNN
+F 3 "" H 10300 5800 60  0000 C CNN
+	1    10300 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 4600 10300 4800
+Wire Wire Line
+	10300 5100 10300 5400
+Wire Wire Line
+	10300 5800 10300 5500
+$Comp
+L +5V #PWR040
+U 1 1 55AC4A05
+P 8900 3300
+F 0 "#PWR040" H 8900 3150 50  0001 C CNN
+F 1 "+5V" H 8900 3440 50  0000 C CNN
+F 2 "" H 8900 3300 60  0000 C CNN
+F 3 "" H 8900 3300 60  0000 C CNN
+	1    8900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR041
+U 1 1 55AC4A24
+P 9600 3300
+F 0 "#PWR041" H 9600 3150 50  0001 C CNN
+F 1 "VDD" H 9600 3450 50  0000 C CNN
+F 2 "" H 9600 3300 60  0000 C CNN
+F 3 "" H 9600 3300 60  0000 C CNN
+	1    9600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D3
+U 1 1 55AC4A4A
+P 9250 3300
+F 0 "D3" H 9250 3400 50  0000 C CNN
+F 1 "D" H 9250 3200 50  0001 C CNN
+F 2 "Discret:D4" H 9250 3300 60  0001 C CNN
+F 3 "" H 9250 3300 60  0000 C CNN
+	1    9250 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8900 3300 9100 3300
+Wire Wire Line
+	9400 3300 9600 3300
+Wire Notes Line
+	7000 6500 7000 500 
+Wire Notes Line
+	7000 2550 11200 2550
+Wire Notes Line
+	11200 4000 7000 4000
+Wire Notes Line
+	9250 4000 9250 6500
+Text Notes 7100 700  0    118  ~ 0
+12v power input connector
+Text Notes 7100 2800 0    118  ~ 0
+ICSP isolation diode
+Text Notes 7100 4250 0    118  ~ 0
+Ground noise filtering
+Text Notes 9350 4250 0    118  ~ 0
+Power status LED
+Text Notes 600  700  0    118  ~ 0
+Main power regulator
+$EndSCHEMATC
